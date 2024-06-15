@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const myArray = ['apple', 'banana', 'orange'];
+const myArray = ['apple', 'banana', 'orange','guava'];
 const myList = myArray.map((item) => <p>{item}</p>)
 
 const container = document.getElementById('root');
