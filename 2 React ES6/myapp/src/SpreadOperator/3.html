@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const myVehicle = {
+            brand: 'Hyundai',
+            model: 'i10',
+            color: 'white'
+        }
+
+        const updateMyVehicle = {
+            type: 'car',
+            year: 2013,
+            color: 'white'
+        }
+
+        const myUpdatedVehicle = { ...myVehicle, ...updateMyVehicle }
+
+        //Check the result object in the console:
+        console.log(myUpdatedVehicle);
+    </script>
+    <p>Press F12 and see the result object in the console view. </p>
+</body>
+
+</html>

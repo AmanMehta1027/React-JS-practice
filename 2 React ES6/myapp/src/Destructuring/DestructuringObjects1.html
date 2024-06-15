@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        const vehicleOne = {
+            brand: 'hyundai',
+            model: 'i10',
+            type: 'car',
+            year: 2013,
+            color: 'white',
+            registration: {
+                city: 'YamunaNagar',
+                state: 'Haryana',
+                country: 'India'
+            }
+        }
+        myVehicle(vehicleOne)
+
+        function myVehicle({ model, registration: { state } }) {
+            const message = 'My ' + model + ' is registered in ' + state + '.';
+
+            document.getElementById("demo").innerHTML = message;
+        }
+    </script>
+</body>
+
+</html>
